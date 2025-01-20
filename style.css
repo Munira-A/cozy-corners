@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  background-color: white;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #d5c3b487;
+  place-items: center;
+}
+.navbar li {
+  list-style: none;
+}
+img {
+  width: 45px;
+  padding-top: 5px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+a:hover {
+  color: #994215;
+}
+
+/* home */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.HeroImg {
+  width: 100%;
+}
+.HeroImg img {
+  width: 100%;
+  object-fit: cover;
+}
+.HeroTxt {
+  color: #994215;
+  font-size: 1.5rem;
+  display: block;
+  place-items: center;
+}
+.HeroTxt button {
+  padding: 15px 25px;
+  background-color: #d5c3b487;
+  border-radius: 20px;
+  font-size: 1rem;
+  border: none;
+}
+.HeroTxt button:hover {
+  background-color: #908372;
+  color: white;
+}
+
+/* cafes */
+#cafe {
+  background-color: #908372;
+  padding: 20px;
+}
+
+#cafe h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+}
+
+.cafe-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-content: center;
+  row-gap: 40px;
+}
+.cafe-card {
+  width: 70%;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+.cafe-img {
+  width: 100%;
+  margin: 0;
+}
+.cafe-img img {
+  width: 100%;
+  padding-bottom: 10px;
+  height: 40vh;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+#about {
+  background-color: #f1f0eb;
+  color: #994215;
+  padding: 0 20px 20px 20px;
+  font-size: 1.5rem;
+}
+
+#about h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+}
+.b,
+.d {
+  width: 10%;
+  position: relative;
+  left: 75%;
+  top: 10px;
+}
+.a,
+.c {
+  width: 10%;
+  position: relative;
+  top: 10px;
+}
+footer {
+  background-color: #908372;
+  padding: 20px;
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+}
+footer p {
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1980px) {
+  a {
+    font-size: 1.3rem;
+  }
+
+  body {
+    font-size: 1.5rem;
+  }
+  #home {
+    flex-direction: row;
+  }
+  .HeroImg {
+    order: 2;
+    width: 40%;
+  }
+
+  .HeroTxt {
+    order: 1;
+    width: 60%;
+    padding-top: 20px;
+    font-size: 2rem;
+  }
+
+  .cafe-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #cafe h2 {
+    font-size: 6rem;
+    font-weight: 900;
+    margin: 41px;
+  }
+  #about h2 {
+    font-size: 6rem;
+    font-weight: 900;
+    margin: 0;
+  }
+
+  footer {
+    font-size: 8rem;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1120px) {
+  .cafe-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer {
+    font-size: 5rem;
+  }
+}
